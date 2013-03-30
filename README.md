@@ -4,7 +4,7 @@ basic_python_django
 course material for teaching python and django (2-day course)
 
 
-course out line
+Course outline
 ===============
 
 Day 1
