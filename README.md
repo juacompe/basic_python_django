@@ -10,7 +10,7 @@ Course outline
 Day 1
 -----
  - Why dynamic language?
- - Dynmic language vs static language?
+ - Dynamic language vs static language?
  - Why TDD?
  - Python script
  - Using Thai characters in Python source code
