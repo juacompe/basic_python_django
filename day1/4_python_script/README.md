@@ -51,3 +51,13 @@ References:
 * [getopt — C-style parser for command line options](http://docs.python.org/2/library/getopt.html)
 * [Python main() functions](http://www.artima.com/weblogs/viewpost.jsp?thread=4829)
 
+Python execute command line
+----
+Use `os.system` to execute command line. The `pip freeze` command returns list of python library that being used.
+```
+workon basic_python_django
+./pip_freeze
+deactivate
+./pip_freeze
+```
+
