@@ -19,7 +19,7 @@ Day 1
  -  PEP20: The Zen of Python (import this)
  -  Data structures
  -  List comprehension
- -  Continue reading: The Python Tutorial
+ -  Continue reading: [The Python Tutorial](http://docs.python.org/2/tutorial/)
 
 Day 2
 -----
