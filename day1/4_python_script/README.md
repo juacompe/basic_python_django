@@ -18,5 +18,9 @@ Testable python script
 The problem with `hello_worl1.py` is that the print is executed when import. Try below in `ipython`.
 ```
 import hello_world1
+
+from hello_world3 import hello_world
+hello_world()
 ```
+See that hello world is not printed when the module is imported.
 
