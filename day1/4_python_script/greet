@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+from greet import greet
+import sys
+
+def main():
+    name = sys.argv[1]
+    message = greet(name)
+    print message
+
+if __name__ == '__main__':
+    main()
+

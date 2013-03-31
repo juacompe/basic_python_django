@@ -24,3 +24,30 @@ hello_world()
 ```
 See that hello world is not printed when the module is imported.
 
+The next problem is command line arguments. Try executing `greet` script as below.
+```
+./greet John
+./greet Jack
+./greet
+```
+
+The problem is `main` in greet is not test-able. Testing greet has to be manually done and it would get harder for complex script. In `greet2` example, `main` is tested to support much more complex options.
+
+```
+./greet2 John
+echo $?
+./greet2
+echo $?
+./greet2 -nJack
+./greet2 -n Jim
+./greet2 --name=Joe
+./greet2 -nJim --name=Joe Jack
+./greet2 -nJim --name=Joe
+./greet2 -nJim -nJoe -nJua
+```
+
+References:
+
+* [getopt — C-style parser for command line options](http://docs.python.org/2/library/getopt.html)
+* [Python main() functions](http://www.artima.com/weblogs/viewpost.jsp?thread=4829)
+
