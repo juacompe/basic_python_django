@@ -10,6 +10,7 @@ odd_items
 ```
 Set comprehension constructs a conditional set in 1 statement.
 ```
-unique_odd_items = { element for element in a if element % 2 != 0 } unique_odd_items
+unique_odd_items = { element for element in a if element % 2 != 0 }
+unique_odd_items
 ```
 
