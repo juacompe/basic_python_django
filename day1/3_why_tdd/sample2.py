@@ -4,5 +4,5 @@ def f(input):
     elif input == 'b':
         return 'the input is b'
     else:
-        abcdefg
+        return 'the input is c'
 
