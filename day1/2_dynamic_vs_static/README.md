@@ -36,5 +36,16 @@ s.name
 %hist
 s.gpa = 3.7
 s.gpa
+
+
+class Teacher(object):
+    job = 'teacher' # static member
+
+
+joey = Teacher()
+joey.name = 'Joey'
+print joey.name
+print joey.job
+print Teacher.job
 ```
 
