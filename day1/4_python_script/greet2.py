@@ -14,8 +14,12 @@ Exit status:
  2  if serious trouble (e.g., machine blows up!).
 """
 
-def greet(name):
-    return 'Hi %s!' % name
+def greet(names):
+    greetings = []
+    for name in names:
+        greeting = 'Hi %s!' % name
+        greetings.append(greeting)
+    return ' '.join(greetings)
 
 def echo(message):
     print message
@@ -23,19 +27,20 @@ def echo(message):
 def main(argv=[]):
     arguments = argv[1:] or sys.argv[1:]
     try: 
-        name = None
+        names = [] 
         opts, args = getopt(arguments, 'n:', ['name='])
         for option, value in opts:
             if option in ('-n', '--name'): 
-                name = value 
+                names.append(value)
         if args:
             name = args[0]
+            names.append(name)
     except GetoptError:
         pass
-    if not name:
+    if not names:
         echo(USAGE)
         return 1
-    message = greet(name)
+    message = greet(names)
     echo(message)
     return 0
 
