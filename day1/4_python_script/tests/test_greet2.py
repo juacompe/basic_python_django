@@ -32,6 +32,13 @@ class TestMain(TestCase):
         self.assertEcho(greet2.USAGE)
         self.assertEqual(1, status_code)
 
+    def test_greet_with_empty_short_option(self):
+        command = './greet2 -n'
+        argv = command.split()
+        status_code = greet2.main(argv)
+        self.assertEcho(greet2.USAGE)
+        self.assertEqual(1, status_code)
+
     def test_greet_jack_with_short_option(self):
         command = './greet2 -nJack'
         argv = command.split()
