@@ -5,7 +5,7 @@ Course material for teaching python and django (2-day course).
 
 Slides can be found at <http://goo.gl/TlQlb>.
 
-credit: [Online markdown editor](http://goo.gl/TlQlb)
+credit: [Online markdown editor](http://markable.in/editor/)
 
 Course outline
 ===============
