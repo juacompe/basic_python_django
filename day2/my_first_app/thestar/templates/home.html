@@ -1,0 +1,13 @@
+<html>
+    <head>
+    </head>
+    <body>
+        Welcome to vote page
+
+        <ul>
+        {% for competitor in competitors %}
+            <li>#{{ competitor.no }} {{ competitor.nick_name }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
