@@ -8,3 +8,6 @@ class Competitor(models.Model):
     def __unicode__(self):
         return self.name
 
+class Vote(models.Model):
+    competitor = models.ForeignKey(Competitor, related_name='votes')
+    
