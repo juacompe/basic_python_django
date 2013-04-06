@@ -12,7 +12,7 @@ def home(request):
 def vote(request):
     no = request.GET['no']
     competitor = Competitor.objects.get(no=no)
-    vote = Vote()
-    vote.competitor = competitor
-    vote.save()
+    new_vote = Vote()
+    competitor.votes.add(new_vote)
     return HttpResponse('OK') 
+

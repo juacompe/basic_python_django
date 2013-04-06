@@ -1,5 +1,6 @@
 from django.db import IntegrityError 
 from django.test import TestCase
+from thestar import factory
 from thestar.models import Competitor
 
 class CompetitorTest(TestCase):
@@ -19,11 +20,7 @@ class CompetitorTest(TestCase):
         self.assertEqual(1, dee.no)
 
     def test_vote_number_must_be_unique(self):
-        dee = Competitor()
-        dee.name = 'Delilian Alford'
-        dee.nick_name = 'Dee'
-        dee.no = 1 # vote number
-        dee.save()
+        dee = factory.create_competitor() 
 
         chris = Competitor()
         chris.name = 'Christopher Jonathan Roy Chaafe'
