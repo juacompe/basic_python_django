@@ -12,5 +12,5 @@ class TestVoteScreen(TestCase):
         url = '/'
         response = self.client.get(url)
         self.assertEqual(200, response.status_code)
-        self.assertContains(response, 'Delilian Alford')
+        self.assertContains(response, 'Dee')
 
