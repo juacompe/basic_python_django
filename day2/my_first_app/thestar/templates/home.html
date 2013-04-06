@@ -1,18 +1,17 @@
-<html>
-    <head>
-    </head>
-    <body>
-        Welcome to vote page
+{% extends "base.html" %}
 
-        <ul>
-        {% for competitor in competitors %}
-            <li>
-                <a href='/thestar/vote/?no={{ competitor.no}}'>
-                #{{ competitor.no }} 
-                {{ competitor.nick_name }}
-                </a>
-            </li>
-        {% endfor %}
-        </ul>
-    </body>
-</html>
+{% block body %}
+Welcome to vote page
+
+<ul>
+{% for competitor in competitors %}
+    <li>
+        <a href='/thestar/vote/?no={{ competitor.no}}'>
+        #{{ competitor.no }} 
+        {{ competitor.nick_name }}
+        </a>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}
