@@ -5,3 +5,6 @@ class Competitor(models.Model):
     nick_name = models.TextField()
     no = models.IntegerField(unique=True)
 
+    def __unicode__(self):
+        return self.name
+
