@@ -9,6 +9,5 @@ def get_from_wiki(keyword):
 def get_first_paragraph(html):
     soup = BeautifulSoup(html)
     paragraph = soup.find('p')
-    link_names = [ link.text for link in paragraph.findAll('a') ]
     return paragraph.getText(separator=u' ')
 
