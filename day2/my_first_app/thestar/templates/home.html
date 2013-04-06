@@ -6,7 +6,12 @@
 
         <ul>
         {% for competitor in competitors %}
-            <li>#{{ competitor.no }} {{ competitor.nick_name }}</li>
+            <li>
+                <a href='/thestar/vote/'>
+                #{{ competitor.no }} 
+                {{ competitor.nick_name }}
+                </a>
+            </li>
         {% endfor %}
         </ul>
     </body>

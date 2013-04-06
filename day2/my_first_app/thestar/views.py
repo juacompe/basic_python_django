@@ -1,5 +1,6 @@
 from django.shortcuts import render_to_response
-from thestar.models import Competitor
+from django.http import HttpResponse 
+from thestar.models import Competitor, Vote
 
 def home(request):
     template = 'home.html'
@@ -8,3 +9,10 @@ def home(request):
     data = {'competitors': competitors}
     return render_to_response(template, data)
 
+def vote(request):
+    no = request.GET['no']
+    competitor = Competitor.objects.get(no=no)
+    vote = Vote()
+    vote.competitor = competitor
+    vote.save()
+    return HttpResponse('OK') 
