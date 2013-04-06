@@ -30,5 +30,5 @@ Day 2
  -  django-test (nose for Django)
  -  Django admin
  -  Dos and Donts for Django admin
- -  Django REST framework
- -  Continue reading: Django documentation
+ -  [Django REST framework] (http://django-rest-framework.org/tutorial/quickstart.html)
+ -  Continue reading: [Django documentation] (https://docs.djangoproject.com/en/1.5/)
