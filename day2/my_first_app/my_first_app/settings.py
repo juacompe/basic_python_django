@@ -124,6 +124,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'django_nose',
     'thestar',
+    'rest_framework',
 )
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'

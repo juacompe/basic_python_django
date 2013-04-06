@@ -21,3 +21,10 @@ class TestVoteScreen(TestCase):
         number_of_votes_for_dee = Vote.objects.count()
         self.assertEqual(1, number_of_votes_for_dee)
 
+
+class TestCompetitorAPI(TestCase):
+    def test_get_competitors(self):
+        url = '/thestar/competitors/'
+        response = self.client.get(url)
+        self.assertEqual(200, response.status_code)
+

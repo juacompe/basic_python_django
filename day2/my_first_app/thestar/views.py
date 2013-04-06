@@ -1,7 +1,9 @@
 from django.http import HttpResponse 
-from thestar.models import Competitor, Vote
 from django.shortcuts import render_to_response
 from django.template import RequestContext
+from rest_framework import generics
+from thestar.models import Competitor, Vote
+from thestar.serializer import CompetitorSerializer
 
 def home(request):
     template = 'home.html'
@@ -17,4 +19,8 @@ def vote(request):
     new_vote = Vote()
     competitor.votes.add(new_vote)
     return HttpResponse('OK') 
+
+class CompetitorAPI(generics.ListCreateAPIView):
+    model = Competitor
+    serializer_class = CompetitorSerializer
 
