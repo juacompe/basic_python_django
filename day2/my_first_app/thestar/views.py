@@ -1,13 +1,15 @@
-from django.shortcuts import render_to_response
 from django.http import HttpResponse 
 from thestar.models import Competitor, Vote
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 
 def home(request):
     template = 'home.html'
 
     competitors = Competitor.objects.all()
     data = {'competitors': competitors}
-    return render_to_response(template, data)
+    context = RequestContext(request, data)
+    return render_to_response(template, context)
 
 def vote(request):
     no = request.GET['no']
