@@ -11,12 +11,6 @@ cd my_first_app/
 python manage.py test
 ```
 
-Whoa! That's a hell lot of errors. ;P
-
-Don't worry. Add database configuration in `settings.py` and try again.
-```
-python manage.py test
-```
 Yes! You are good to go!
 
 Run server
