@@ -152,7 +152,7 @@ map(power, a)
 `filter` filter elements out of a list according to condition in the given function.
 ```
 def is_even(x):
-    return x if x % 2 == 0 else None
+    return x % 2 == 0
 
 is_even(1)
 is_even(0)
