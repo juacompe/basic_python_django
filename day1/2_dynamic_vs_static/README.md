@@ -1,4 +1,4 @@
-Static variable type
+Dynamic variable type
 -----
 ```
 x = 3
