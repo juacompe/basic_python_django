@@ -1,5 +1,4 @@
 from getopt import getopt
-from greet import greet
 import sys
 
 USAGE = """Usage: greet2 [OPTION]... NAME
