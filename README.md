@@ -27,8 +27,8 @@ Day 2
 -----
  1. Install Django
  -  MVC in Django
- -  django-test (nose for Django)
+ -  Django test
  -  Django admin
  -  Dos and Donts for Django admin
- -  Django REST framework
- -  Continue reading: Django documentation
+ -  [Django documentation](https://docs.djangoproject.com/en/1.7/)
+ -  [Django REST framework](http://www.django-rest-framework.org/)
